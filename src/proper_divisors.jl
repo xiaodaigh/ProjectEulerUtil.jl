@@ -2,6 +2,9 @@ using Primes
 using Base.Iterators: drop, product
 
 proper_divisors(n) = begin
+    if n == 1
+        return [1]
+    end
     factors_of_n = factor(n)
     nfactors = prod(x->x[2]+1, factors_of_n)
     res = Vector{Int}(undef, nfactors)

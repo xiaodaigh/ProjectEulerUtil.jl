@@ -3,8 +3,18 @@ uuid = "f3fda6fd-dc4e-47de-8408-2e5155a8ff39"
 authors = ["xiaodaigh <zhuojia.dai@gmail.com> and contributors"]
 version = "0.1.0"
 
+[deps]
+AbstractTrees = "1520ce14-60c1-5f80-bbc7-55ef81b5835c"
+Gumbo = "708ec375-b3d6-5a57-a7ce-8257bf98657a"
+HTTP = "cd3eb016-35fb-5094-929b-558a96fad6f3"
+Primes = "27ebfcd6-29c5-5fa9-bf4b-fb8fc14df3ae"
+
 [compat]
 julia = "1"
+AbstractTrees = "0.3"
+Gumbo = "0.8"
+HTTP = "0.8"
+Primes = "0.5"
 
 [extras]
 Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
