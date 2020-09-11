@@ -3,8 +3,7 @@ using Gumbo, HTTP, AbstractTrees
 export get_problem_title
 
 get_problem_title(pn) = begin
-    p = HTTP.get("https://projecteuler.net/problem=$pn").body |>
-        String |> parsehtml
+    p = HTTP.get("https://projecteuler.net/problem=$pn").body |> String |> parsehtml
 
     for elem in PreOrderDFS(p.root)
         if elem isa HTMLElement
@@ -14,4 +13,3 @@ get_problem_title(pn) = begin
         end
     end
 end
-
