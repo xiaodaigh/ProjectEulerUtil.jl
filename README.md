@@ -3,7 +3,7 @@
 
 `is_abundant` checks if a number is abundant
 
-`get_problem_title(n)` get the title of the `n`th number
+`get_problem_title(n)` get the title of the `n`th question
 
 `inverse_digits(digits(n))` gives `n`
 
